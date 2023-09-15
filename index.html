@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de monedas Nacional</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- Local Style -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- Font-Awesome personal KIT -->
+  <script src="https://kit.fontawesome.com/faed31811b.js" crossorigin="anonymous"></script>
+  <!-- ChartJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+  <div class="wrapper container p-5 bg-light mt-5 text-center">
+    <h1>Conversor de monedas Nacional</h1>
+    <hr>
+    <div class="container d-flex flex-column p-5">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">CLP</span>
+            <input id="user-input" type="number" min="0" class="form-control" placeholder="Pesos Chilenos" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+          <p>Moneda a convertir:</p>
+          <select id="currency-select" class="form-select" aria-label="Default select example">
+            <option selected>Selecciona una moneda</option>
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+            </select>
+            <div class="d-flex justify-content-center w-100">
+              <button button id="user-btn" type="button" class="btn btn-success mt-3">Calcular</button>
+            </div>
+            <div class="box-result d-flex justify-content-center mt-3">
+              <span id="user-result" ></span>
+            </div>
+    </div>
+    <div class="container chart-container">
+      <h1>Comportamiento de la moneda</h1>
+      <canvas id="user-chart" ></canvas>
+    </div>
+  </div>
+
+
+
+  <footer class="d-flex flex-column align-items-center">
+    <p>By @Dario Urdaneta</p>
+    <p>Desafío Latam - API's</p>
+  </footer>
+
+  <script src="./assets/script/main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

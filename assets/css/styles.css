@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+button {
+    width: 15rem;
+}
+
+.user-chart {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
