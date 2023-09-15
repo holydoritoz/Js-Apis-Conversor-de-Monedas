@@ -33,6 +33,9 @@ export const chartData = async () => {
         const ctx = document.getElementById('user-chart').getContext('2d');
 
         //Destruimos el canvas anterior, para renderizar uno nuevo
+
+        myChart = Chart.getChart('user-chart');
+
         if (myChart) { 
           myChart.destroy();
         };
